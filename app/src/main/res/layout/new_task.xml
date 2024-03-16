@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:fontFamily="casual"
+        android:text="Давайте создадим задание!"
+        android:textAllCaps="false"
+        android:textColor="#41A4D1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNewTaskName"
+        android:layout_width="306dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#41A4D1"
+        android:hint="название задания"
+        android:textColor="#41A4D1"
+        android:textColorHint="#41A4D1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/editTextTaskReward"
+        android:layout_width="306dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#41A4D1"
+        android:ems="10"
+        android:hint="награда (монет)"
+        android:inputType="number"
+        android:textColor="#41A4D1"
+        android:textColorHint="#41A4D1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNewTaskName" />
+
+    <EditText
+        android:id="@+id/editTextRepeatableTask"
+        android:layout_width="300dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="#41A4D1"
+        android:ems="10"
+        android:hint="переодичность"
+        android:textColor="#41A4D1"
+        android:textColorHint="#41A4D1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxImportance" />
+
+    <CheckBox
+        android:id="@+id/checkBoxImportance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:buttonTint="#41A4D1"
+        android:checked="false"
+        android:text="Очень важно!!!"
+        android:textColor="#41A4D1"
+        app:layout_constraintStart_toStartOf="@+id/editTextTaskReward"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskReward" />
+
+    <CheckBox
+        android:id="@+id/checkBoxRepeatable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:buttonTint="#41A4D1"
+        android:text="Повторяется"
+        android:textColor="#41A4D1"
+        app:layout_constraintEnd_toEndOf="@+id/editTextTaskReward"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTaskReward" />
+
+    <Button
+        android:id="@+id/taskDoneButton"
+        android:layout_width="249dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="100dp"
+        android:backgroundTint="#F6E86D"
+        android:drawableLeft="@drawable/check"
+        android:text="Готово"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

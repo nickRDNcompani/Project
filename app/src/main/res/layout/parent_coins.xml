@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <Button
+        android:id="@+id/doneButtonCoins"
+        android:layout_width="233dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="#F6E86D"
+        android:drawableLeft="@drawable/check"
+        android:fontFamily="casual"
+        android:text="готово"
+        android:textColor="#41A4D1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/plusCoins"
+        android:layout_width="165dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#41A4D1"
+        android:ems="10"
+        android:hint="добавить монет"
+        android:inputType="textPassword"
+        android:textColor="#41A4D1"
+        android:textColorHint="#41A4D1"
+        app:layout_constraintBottom_toTopOf="@+id/doneButtonCoins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/minusCoins"
+        android:layout_width="165dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#41A4D1"
+        android:ems="10"
+        android:hint="убавить монет"
+        android:inputType="textPassword"
+        android:textColor="#41A4D1"
+        android:textColorHint="#41A4D1"
+        app:layout_constraintBottom_toTopOf="@+id/plusCoins"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

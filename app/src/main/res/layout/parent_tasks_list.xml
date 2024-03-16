@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:layout_width="161dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#F6E86D"
+        android:drawableLeft="@drawable/plus2"
+        android:fontFamily="casual"
+        android:text="Добавить"
+        android:textColor="#41A4D1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tasksListChild"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonDeleteTask"
+        android:layout_width="161dp"
+        android:layout_height="62dp"
+        android:backgroundTint="#F6E86D"
+        android:drawableLeft="@drawable/remove"
+        android:fontFamily="casual"
+        android:text="удалить"
+        android:textColor="#41A4D1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tasksListChild"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <Button
+        android:id="@+id/buttonDone"
+        android:layout_width="178dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#F6E86D"
+        android:drawableLeft="@drawable/plus2"
+        android:fontFamily="casual"
+        android:text="Выполнено"
+        android:textColor="#41A4D1"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasksListChild"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <Button
+        android:id="@+id/buttonDeny"
+        android:layout_width="177dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#F6E86D"
+        android:drawableLeft="@drawable/remove"
+        android:fontFamily="casual"
+        android:text="Не выполнено"
+        android:textColor="#41A4D1"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tasksListChild"
+        app:layout_constraintVertical_bias="0.395" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="casual"
+        android:text="Список заданий"
+        android:textAllCaps="false"
+        android:textColor="#41A4D1"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/tasksListChild"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+</androidx.constraintlayout.widget.ConstraintLayout>
